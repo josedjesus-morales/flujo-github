@@ -1,0 +1,31 @@
+{
+  "name": "flujo-github",
+  "version": "1.0.0",
+  "description": "flujo de praxtica para github",
+  "main": "index.js",
+  "scripts": {
+    "postInstall": "npm -g commitizen; npm run frendly; npm run alias",
+    "alias": "git config —global alias.cz git-cz",
+    "release": "standard-version",
+    "frendly": "commitizen init cz-conventional-changelog --save-dev --save-exact",
+    "release:beta": "npx standar-version --prerelease beta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:OrcaPracticas/flujo-github.git"
+  },
+  "keywords": [
+    "flujo",
+    "commits",
+    "convencionales"
+  ],
+  "author": "Jorge Mendez Ortega <jorge.mendez.ortega@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "7.0.1",
+    "standard-version": "9.3.1"
+  }
+}
