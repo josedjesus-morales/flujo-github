@@ -116,6 +116,6 @@ como podemos ver se modifico el status del pull y del issue hora teneos un flujo
 
 ![FIG 15](./assets/fig15.png)
 
-Pdemos ver todo el historial de cambios realizados.
+Podemos ver todo el historial de cambios realizados.
 
 > **🔖 Nota:** al usar commits convencionales podemos correr el siguiente comando **npm run release** con lo cual podremos crear un **changelog** para tener el historial de todos los cambios relizados.
